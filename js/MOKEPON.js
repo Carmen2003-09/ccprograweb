@@ -16,12 +16,13 @@ function seleccionarMascotaJugador(){
     let inputHipodoge = document.getElementById('Hipodoge')
     let inputCapipepo = document.getElementById('Capipepo')
     let inputRatigueya = document.getElementById('Ratigueya')
+    let spanMascotajugador = document.getElementById('mascota-jugador')
     if (inputHipodoge.checked) {
-        alert('Seleccionaste a hipodoge')
+        spanMascotajugador.innerHTML = 'Hipodoge'
     }else if (inputCapipepo.checked) {
-        alert ('Seleccionaste a capipepo')
+        spanMascotajugador.innerHTML = 'Capipepo'
     }else if (inputRatigueya.checked) {
-        alert ('Seleccionaste a Ratigueya')
+        spanMascotajugador.innerHTML = 'Ratigueya'
     } else {
         alert ('Selecciona a una mascota')
     }
